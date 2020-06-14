@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{QA_for_Admin_Data.bib}
+\setlength{\parskip}{1em}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\begin{Schunk}
+\begin{Sinput}
+> # load libraries
+> library(descr)
+> library(plyr)
+> library(dplyr)
+> library(RPostgreSQL)
+> library(ggplot2)
+> library(Hmisc)
+> library(htmlTable)
+\end{Sinput}
+\end{Schunk}
+
+\begin{Schunk}
+\begin{Sinput}
+> # connect to database
+> source(file="pg_connect.R")

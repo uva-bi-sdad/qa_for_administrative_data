@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: maroon;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Data Repurposing: Dealing with Structure Issues</h1>
+</header>
+  
+<nav>
+  <ul>
+	<li><a href="Home.html"></br></br>Home</br></a></li>
+    <li><a href="Combined Observational Unit Type (Property Data Example).html"></br></br>Combined Observational Unit Type</br> (Property Data Example)</a></li>
+    <li><a href="Divided Observational Unit Type(Gender Example).html"></br></br>Divided Observational Unit Type</br> (Gender Example)</a></li>
+    <li><a href="Multiple Observation Directions (Educational Attainment Example).html"></br></br>Multiple Observation Directions </br> (Educational Attainment Example)</a></li>
+  </ul>
+</nav>
+
+<article>
+  <h1 style="color:#5499C7;">Combined Observational Unit Type</h1>
+  <h3>Within administrative records, multiple types of data are often combined for expediency. By multiple types we mean different sets of data fields, each set representing a different type of observational unit (e.g. property information and listing agent information in the same record). The observational unit types necessary to the project at hand need to be separated out into individual observations or individual datasets in the restructuring phase.
+
+An example from a housing case study is given here. The dataset provided was comprised of single records with 128 fields. Each original record was identified by a unique "List Number". However, if a parcel was listed twice it would have two different "List Numbers." As a result, changes in a property or parcel over time could not be tracked from these records because the structure only identified the list number not the parcel number. Changing the structure to include the "Parcel ID" allowed the required historical tracking of changes.</h3>
+  <h3 style="color:#5499C7;">Property Data Example</h3>
+  <p><img src="Propertycopy.gif"/>
+</article>
+
+<footer>SDAL Data Repurposing Series</footer>
+
+</div>
+
+</body>
+</html>
